@@ -16,7 +16,7 @@ startFromClosest = False #if ture, for every target, we would select the base to
 threshold = 3.5 #threshold for L2 distance in feature space
 
 
-if startFromClosest == False:
+if not startFromClosest:
 	#these are some preferred images as base instances which will be used for generating poison instances for the attacks
 	class_dog_base_id_in_test = [507, 406, 493]
 	class_fish_base_id_in_test = [738,718,991,962]
